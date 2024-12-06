@@ -59,11 +59,11 @@ export default function AboutScreen() {
     <View style={styles.container}>
     <StatusBar translucent={true} />
     <ScrollView>
-    {/* Hotelling, seat has been booked successfully */}
+    {/* Hoteling, seat has been booked successfully */}
      <View style={{ marginVertical: 15}}> 
-      <Text style={{ fontSize: 15 , paddingHorizontal:10 , fontWeight:'bold'}}>Hotelling : Seat has been booked successfully.</Text>
+      <Text style={{ fontSize: 15 , paddingHorizontal:10 , fontWeight:'bold'}}>Hoteling : Seat has been booked successfully.</Text>
       </View>
-      {/* Hotelling avatar */}
+      {/* Hoteling avatar */}
       <TouchableOpacity  onPress={()=> setShowMore((prev) => !prev)}> 
         <View style={{flexDirection:'row',  marginTop: 15, height: more ? 150 : 100}}> 
         {/* avatar */}
@@ -79,8 +79,8 @@ export default function AboutScreen() {
         </View>
         {/* textContainer */}
         <View style={{ flex:1, paddingTop:5, marginHorizontal:20, paddingLeft:5}}>
-        <Text style={{ fontWeight: '500', fontSize:15, color: more ? '#0ea5e9' : 'black'}}>Hotelling</Text>
-        <Text style={{ color:'gray', fontSize:12}}>{more ? "Hotelling@infosys.com" : "To You"}</Text>
+        <Text style={{ fontWeight: '500', fontSize:15, color: more ? '#0ea5e9' : 'black'}}>Hoteling</Text>
+        <Text style={{ color:'gray', fontSize:12}}>{more ? "Hoteling@infosys.com" : "To You"}</Text>
         {more && (
         <View style={{ marginTop:17}}>
         <Text style={{ color:'#0ea5e9', fontSize:14}}>You <Text style={{ color:'gray', fontSize:11}}> sanjana.chauhan01@infosys.com</Text></Text>

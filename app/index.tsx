@@ -82,14 +82,21 @@ export default function Index() {
       letter: 'J',
       emailFrom: 'James Walker',
       emailSubject: 'Weekly Performance Metrics',
-      emailBody: 'The performance metrics for the week have been share...',
+      emailBody: 'The performance metrics for the week have been sha.....',
       time: '2 days ago',
+    },
+    {
+      letter: 'H',
+      emailFrom: 'Hoteling',
+      emailSubject: 'Hoteling : Seat has been booked successful...',
+      emailBody: 'Hi Sanjana Chauhan, Your seat with below details ha..',
+      time: 'Yesterday',
     },
     {
       letter: 'K',
       emailFrom: 'Karen Scott',
       emailSubject: 'New Employee Onboarding',
-      emailBody: 'Welcome the new hires and guide them through the ori...',
+      emailBody: 'Welcome the new hires and guide them through the or....',
       time: '4:00 PM',
     },
     {
@@ -128,7 +135,7 @@ export default function Index() {
      <View style={{ flexDirection:'row'}}>
       {/* avatar */}
       <View style={{ left:0, flexDirection:'row'}}> 
-        <View style={{ backgroundColor:getRandomColor() , width:50 , height:50, borderRadius:50, zIndex:1, alignItems:'center', justifyContent:'center'}}>
+        <View style={{ backgroundColor: item.emailFrom === "Hoteling" ? '#ea580c':getRandomColor() , width:50 , height:50, borderRadius:50, zIndex:1, alignItems:'center', justifyContent:'center'}}>
         <Text style={{ zIndex:1 , padding:10, fontSize:16, color:'white'}}>{item.letter}</Text>
         </View>
         <View style={{width: '90%',paddingLeft:5}}>
