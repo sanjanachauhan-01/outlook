@@ -3,6 +3,13 @@ import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
 export default function Index() {
+  type Email = {
+    letter: string;
+    emailFrom: string;
+    emailSubject: string;
+    emailBody: string;
+    time: string;
+  };
 
   const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
@@ -14,7 +21,7 @@ export default function Index() {
   };
 
   // Sample data for the FlatList
-  const emailData = [
+  const emailData : Email[] = [
     {
       letter: 'A',
       emailFrom: 'Alice Johnson',
@@ -129,7 +136,7 @@ export default function Index() {
     },
   ];
   
-  const renderItem = ({ item }) => (
+  const renderItem = ({ item }: { item: Email }) => (
     <TouchableOpacity style={styles.item}>
       <Link href="/about" style={styles.itemText}>
      <View style={{ flexDirection:'row'}}>
